@@ -17,10 +17,6 @@ end
 --   filetypes = { "html", "templ" }
 -- })
 
-lspconfig["tsserver"].setup {
-  filetypes = { "html", "templ" },
-}
-
 lspconfig["html"].setup {
   filetypes = { "html", "templ" },
 }
