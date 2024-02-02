@@ -4,7 +4,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "tsserver", "clangd", "templ", "htmx", "tailwindcss", "gopls", "angularls" }
+local servers = { "html", "cssls", "tsserver", "clangd", "templ", "tailwindcss", "gopls", "angularls" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -13,14 +13,28 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-lspconfig["htmx"].setup({
-  filetypes = { "html", "templ" }
-})
+-- lspconfig["htmx"].setup({
+--   filetypes = { "html", "templ" }
+-- })
 
-lspconfig["html"].setup({
-  filetypes = { "html", "templ" }
-})
+lspconfig["tsserver"].setup {
+  filetypes = { "html", "templ" },
+}
 
-lspconfig["tailwindcss"].setup({
-  filetypes = { "html", "templ" }
-})
+lspconfig["html"].setup {
+  filetypes = { "html", "templ" },
+}
+
+lspconfig["tailwindcss"].setup {
+  filetypes = { "html", "templ" },
+  init_options = {
+    userLanguages = {
+      templ = "html",
+    },
+  },
+  settings = {
+    includeLanguages = {
+      templ = "html",
+    },
+  },
+}

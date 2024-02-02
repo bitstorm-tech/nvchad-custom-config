@@ -7,6 +7,7 @@ local autocmd = vim.api.nvim_create_autocmd
 -- })
 
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.relativenumber = true
 vim.opt.whichwrap = "<>[]"
 
@@ -30,6 +31,7 @@ local custom_format = function()
     end
 end
 vim.api.nvim_create_autocmd({ "BufWritePre" }, { pattern = { "*.templ" }, callback = custom_format })
+vim.g.lua_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/lua_snippets"
 
 autocmd("BufWritePre", {
   pattern = "*.go",

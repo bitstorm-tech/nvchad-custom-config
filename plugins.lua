@@ -86,6 +86,13 @@ local plugins = {
       "rcarriga/nvim-notify",
     },
   },
+  {
+    "L3MON4D3/LuaSnip",
+  },
+  {
+    "windwp/nvim-autopairs",
+    enabled = false,
+  },
 }
 
 return plugins
