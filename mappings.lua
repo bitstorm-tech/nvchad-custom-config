@@ -12,8 +12,9 @@ M.general = {
       end,
       "formatting",
     },
-    ["<leader>gg"] = { ":LazyGit<CR>", "Open LazyGit" }
-
+    ["<leader>gg"] = { ":LazyGit<CR>", "Open LazyGit" },
+    ["<leader>o"] = { "o<Esc>", "New line below" },
+    ["<leader>O"] = { "O<Esc>", "New line above" },
   },
   v = {
     [">"] = { ">gv", "indent"},
