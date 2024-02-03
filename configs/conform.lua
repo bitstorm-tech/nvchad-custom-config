@@ -10,6 +10,7 @@ local options = {
 		html = { "prettier" },
 
 		sh = { "shfmt" },
+        go = { "gopls" },
 	},
 
   -- adding same formatter for multiple filetypes can look too much work for some
