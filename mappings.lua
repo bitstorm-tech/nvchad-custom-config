@@ -17,7 +17,7 @@ M.general = {
     ["<leader>O"] = { "O<Esc>", "New line above" },
   },
   v = {
-    [">"] = { ">gv", "indent"},
+    [">"] = { ">gv", "indent" },
   },
 }
 
