@@ -10,6 +10,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.relativenumber = true
 vim.opt.whichwrap = "<>[]"
+vim.opt.wrap = false
 
 vim.filetype.add({ extension = { templ = "templ" }})
 local custom_format = function()
