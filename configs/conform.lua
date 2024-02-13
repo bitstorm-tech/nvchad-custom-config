@@ -10,9 +10,12 @@ local options = {
     html = { "prettier" },
     json = { "prettier" },
 
-    sh = { "shfmt" },
+    -- sh = { "shfmt" },
     go = { "gopls" },
     templ = { "templ" },
+    yaml = { "yamlls" },
+    yml = { "yamlls" },
+    sh = { "bashls" },
   },
 
   -- adding same formatter for multiple filetypes can look too much work for some
