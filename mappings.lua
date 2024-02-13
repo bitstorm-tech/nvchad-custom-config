@@ -15,6 +15,12 @@ M.general = {
     ["<leader>gg"] = { ":LazyGit<CR>", "Open LazyGit" },
     ["<leader>o"] = { "o<Esc>", "New line below" },
     ["<leader>O"] = { "O<Esc>", "New line above" },
+    ["<C-/>"] = {
+      function()
+        require("Comment.api").toggle.linewise.current()
+      end,
+      "Toggle comment",
+    },
   },
   v = {
     [">"] = { ">gv", "indent" },
