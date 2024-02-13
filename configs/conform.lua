@@ -11,6 +11,7 @@ local options = {
 
 		sh = { "shfmt" },
         go = { "gopls" },
+        templ = { "templ" },
 	},
 
   -- adding same formatter for multiple filetypes can look too much work for some
