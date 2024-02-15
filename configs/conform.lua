@@ -9,6 +9,7 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     json = { "prettier" },
+    typescript = { "prettier" },
 
     -- sh = { "shfmt" },
     go = { "gopls" },
