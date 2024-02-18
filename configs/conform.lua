@@ -13,11 +13,12 @@ local options = {
 
     -- sh = { "shfmt" },
     go = { "gopls" },
-    templ = { "templ" },
+    templ = { "templ", "prettier" },
     yaml = { "yamlls" },
     yml = { "yamlls" },
     sh = { "bashls" },
   },
+
 
   -- adding same formatter for multiple filetypes can look too much work for some
   -- instead of the above code you could just use a loop! the config is just a table after all!
