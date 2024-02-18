@@ -6,8 +6,8 @@ local autocmd = vim.api.nvim_create_autocmd
 --   command = "tabdo wincmd =",
 -- })
 
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+-- vim.opt.tabstop = 4
+-- vim.opt.shiftwidth = 4
 vim.opt.relativenumber = true
 vim.opt.whichwrap = "<>[]"
 vim.opt.wrap = false
