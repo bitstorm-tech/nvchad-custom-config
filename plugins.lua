@@ -132,6 +132,13 @@ local plugins = {
       vim.keymap.set("n", "<leader>dq", dapui.close, {})
     end,
   },
+  {
+    "rmagatti/auto-session",
+    lazy = false,
+    config = function()
+      require("auto-session").setup()
+    end,
+  }
 }
 
 return plugins
