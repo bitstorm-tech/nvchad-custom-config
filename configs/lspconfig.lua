@@ -5,7 +5,7 @@ local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
 local servers =
-  { "html", "cssls", "tsserver", "clangd", "templ", "tailwindcss", "gopls", "angularls", "yamlls", "bashls" }
+  { "html", "cssls", "tsserver", "clangd", "templ", "tailwindcss", "gopls", "angularls", "yamlls", "bashls", "eslint" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -38,4 +38,8 @@ lspconfig["tailwindcss"].setup {
 
 lspconfig["tsserver"].setup {
   filetypes = { "js", "ts", "templ" },
+}
+
+lspconfig["eslint"].setup {
+  filetypes = { "html", "ts", "js" },
 }
