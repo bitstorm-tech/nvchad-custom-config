@@ -73,13 +73,17 @@ local plugins = {
   },
   {
     "folke/noice.nvim",
+    lazy = false,
     event = "VeryLazy",
-    enabled = false,
+    enabled = true,
     opts = {},
     config = function()
       require("noice").setup {
-        cmdline = {
+        lsp = {
           signature = {
+            enabled = false,
+          },
+          hover = {
             enabled = false,
           },
         },

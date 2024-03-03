@@ -19,10 +19,14 @@ end
 -- })
 
 lspconfig["html"].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
   filetypes = { "html", "templ" },
 }
 
 lspconfig["tailwindcss"].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
   filetypes = { "html", "templ" },
   init_options = {
     userLanguages = {
@@ -37,9 +41,13 @@ lspconfig["tailwindcss"].setup {
 }
 
 lspconfig["tsserver"].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
   filetypes = { "js", "ts", "templ" },
 }
 
 lspconfig["eslint"].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
   filetypes = { "html", "ts", "js" },
 }
